@@ -33,24 +33,6 @@ def create_app():
     CORS(
         app,
         resources={r"/api/*": {"origins": "*"}}, supports_credentials=False)
-    # cors_origins = [
-    #     "http://localhost:*",
-    #     "http://127.0.0.1:*",
-    #     "capacitor://localhost",
-    #     "ionic://localhost",
-    #     "*",  
-    # ]
-
-    # CORS(app, resources={r"/api/*": {"origins": "*"}})
-
-    # CORS(
-    #     app,
-    #     resources={r"/api/*": {"origins": cors_origins}},
-    #     supports_credentials=False,
-    #     allow_headers=["Content-Type", "Authorization", "X-Safe-Mode"],
-    #     methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    #     max_age=3600,
-    # )
     db.init_app(app)
     ma.init_app(app)
     migrate.init_app(app, db)

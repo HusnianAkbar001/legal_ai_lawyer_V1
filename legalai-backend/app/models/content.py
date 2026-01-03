@@ -33,7 +33,7 @@ class Pathway(db.Model):
     id = db.Column(db.BigInteger, primary_key=True)
     title = db.Column(db.String(200), nullable=False)
     summary = db.Column(db.Text)
-    steps = db.Column(JSON().with_variant(JSONB, "postgresql"), nullable=False)  # list of steps, decisions etc.
+    steps = db.Column(JSON().with_variant(JSONB, "postgresql"), nullable=False)  
     category = db.Column(db.String(120), index=True)
     language = db.Column(db.String(10), default="en")
     tags = db.Column(db.ARRAY(db.String), default=[])
