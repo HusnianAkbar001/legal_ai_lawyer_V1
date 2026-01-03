@@ -1,0 +1,79 @@
+# =========================
+# Environment & Secrets
+# =========================
+.env
+.env.*
+*.env
+
+# =========================
+# Python Cache / Compiled
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# =========================
+# Virtual Environments
+# =========================
+venv/
+env/
+.venv/
+ENV/
+virtualenv/
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+
+# =========================
+# Celery / Beat Files
+# =========================
+celerybeat-schedule
+celerybeat-schedule.*
+*.pid
+
+# =========================
+# OS / Editor Files
+# =========================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# =========================
+# Testing / Coverage
+# =========================
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# =========================
+# Build / Distribution
+# =========================
+build/
+dist/
+*.egg-info/
+
+# =========================
+# Migrations Cache Only
+# (actual migration files tracked)
+# =========================
+migrations/__pycache__/
+
+
+# =========================
+# Runtime / Temp Files
+# =========================
+*.tmp
+*.temp
+
+# =========================
+# Database (local only)
+# =========================
+*.sqlite3
+*.db
