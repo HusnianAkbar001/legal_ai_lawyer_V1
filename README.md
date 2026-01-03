@@ -37,7 +37,7 @@ python -m venv venv
 ```
 
 ```bash
-C:\Users\Zbook\AppData\Local\Programs\Python\Python310\python.exe -m venv venv
+C:\Users\YOUR_USER\AppData\Local\Programs\Python\Python310\python.exe -m venv venv
 ```
 
 3. Activate the virtual environment (Windows):
